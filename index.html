@@ -3,13 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First Frontend Project</title>
+  <title>PixelCraft | Junior Frontend Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Привет, GitHub!</h1>
-  <button id="btn">Нажми меня</button>
-  <p id="text">Пока ничего не произошло</p>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="header container">
+    <a class="brand" href="#home">PixelCraft</a>
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакт</a>
+    </nav>
+    <a class="btn btn-outline" href="#contact">Написать</a>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Junior Frontend Developer</p>
+        <h1>Создаю чистые и живые интерфейсы для веба</h1>
+        <p class="lead">Лендинг как мини-портфолио: адаптивная верстка, аккуратная типографика, анимации и понятная структура кода.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#projects">Смотреть работы</a>
+          <button class="btn btn-soft" id="themeBtn">Сменить акцент</button>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <p>Сейчас в фокусе</p>
+        <strong data-target="3">0</strong>
+        <span>пет-проекта в разработке</span>
+      </div>
+    </section>
+
+    <section class="about container reveal" id="about">
+      <h2>Почему этот лендинг выделяется</h2>
+      <div class="about-grid">
+        <article>
+          <h3>Сильная база</h3>
+          <p>Чистый HTML, модульный CSS и понятный JavaScript без лишней сложности.</p>
+        </article>
+        <article>
+          <h3>Готовность к реальной работе</h3>
+          <p>Сразу видно навыки: layout, адаптив, интерактив и внимание к деталям.</p>
+        </article>
+        <article>
+          <h3>Легко расширять</h3>
+          <p>Добавляй новые секции и карточки без переписывания всей страницы.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects container" id="projects">
+      <h2 class="reveal">Мини-проекты</h2>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <h3>Landing для кофейни</h3>
+          <p>Фокус на эмоции бренда, CTA и скорости загрузки.</p>
+          <a href="#">Смотреть кейс</a>
+        </article>
+        <article class="project-card reveal">
+          <h3>Todo App</h3>
+          <p>CRUD-логика, фильтрация задач и работа с localStorage.</p>
+          <a href="#">Смотреть кейс</a>
+        </article>
+        <article class="project-card reveal">
+          <h3>Weather Dashboard</h3>
+          <p>Интеграция API и отображение данных в карточной сетке.</p>
+          <a href="#">Смотреть кейс</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact container reveal" id="contact">
+      <h2>Готов к стажировке или junior-позиции</h2>
+      <p>Открыт к предложениям и командной разработке. Давай обсудим задачу.</p>
+      <a class="btn btn-main" href="mailto:hello@example.com">hello@example.com</a>
+      <p class="hint" id="hintText">Нажми «Сменить акцент», чтобы увидеть интерактив.</p>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 PixelCraft. Built with HTML, CSS, JS.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
